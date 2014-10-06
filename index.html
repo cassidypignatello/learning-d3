@@ -6,6 +6,9 @@
     <script type="text/javascript" src="d3/d3.js"></script>
   </head>
   <body>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      var dataset = [5, 10, 15, 20, 25];
+      d3.select("body").selectAll("p").data(dataset).enter().append("p").text("New paragraph!");
+    </script>
   </body>
 </html>
